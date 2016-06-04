@@ -26,6 +26,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
+function multiply(num1, num2) {
+  var numMultiply = num1 * num2;
+  var multiplyString = 'The product of ' + num1 + ' and ' + num2 + ' is ' + numMultiply + '.';
+  var multiplyArray = [numMultiply, multiplyString];
+  console.log(multiplyArray);
+  return multiplyArray;
+}
+
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(4,7);
 
