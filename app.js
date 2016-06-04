@@ -34,6 +34,14 @@ function multiply(num1, num2) {
 }
 
 
+function multiply(num1, num2) {
+  var numMultiply = num1 * num2;
+  var multiplyString = 'The product of ' + num1 + ' and ' + num2 + ' is ' + numMultiply + '.';
+  var multiplyArray = [numMultiply, multiplyString];
+  console.log(multiplyArray);
+  return multiplyArray;
+}
+
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(4,7);
 
@@ -59,6 +67,7 @@ function sumAndMultiply(num1, num2, num3) {
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
+
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -68,10 +77,25 @@ Write a function called sumArray() that takes in an array of numbers as its argu
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-testArray = [2,3,4];
+
+function sumArray(testArray) {
+  var totalOne = 0
+  var emptyArray = [];
+
+  for (var i = 0; i < testArray.length; i++) {
+    totalOne += testArray[i];
+    }
+    newString = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + " was passed in as an array of numbers, and " + totalOne + " is their sum."
+    emptyArray.push(totalOne, newString);
+    console.log(emptyArray);
+    return emptyArray;
+}
+
+var testArray = [2,3,4];
+
 
 // Here is the test for sumArray(); uncomment it to run it
-testSumArray(testArray);
+  testSumArray([2,3,4]);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
@@ -84,7 +108,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 // Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyArray(2,3,4);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Submit the link to the repo via Canvas.
 
