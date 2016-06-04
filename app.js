@@ -25,6 +25,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
+function multiply(num1, num2) {
+  var numMultiply = num1 * num2;
+  var multiplyString = 'The product of ' + num1 + ' and ' + num2 + ' is ' + numMultiply + '.';
+  var multiplyArray = [numMultiply, multiplyString];
+  console.log(multiplyArray);
+  return multiplyArray;
+}
+
 
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(4,7);
@@ -39,7 +47,15 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-
+function sumAndMultiply(num1, num2, num3) {
+  var numSum = num1 + num2 + num3;
+  var numMultiply = num1 * num2 * num3;
+  var sumString = num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' + numSum + '.';
+  var multiplyString = 'The product of ' + num1 + ' and ' + num2 + ' and ' + num3 + ' is ' + numMultiply + '.';
+  var sumArray = [numSum, numMultiply, sumString, multiplyString];
+  console.log(sumArray);
+  return sumArray;
+}
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
